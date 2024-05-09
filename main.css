@@ -207,6 +207,7 @@ footer li img{
 
     .container {
         display: flex;
+        /* align-items: center; */
     }
 
     /* ABOUT US */
@@ -219,13 +220,10 @@ footer li img{
     
     #sobre-a-loja img {
         width: 100%;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
-    
-    section {
-        padding: 48px 0;
+        margin-right: 0;
+
     }    
+   
 
     #sobre-a-loja p {
         text-align: center;
@@ -239,10 +237,6 @@ footer li img{
     section p {
         /* text-align: center; */
         
-    }
-
-    #em-destaque .container {
-        display: block;
     }
 
     .lista-veiculos {
@@ -266,5 +260,7 @@ footer li img{
         border-radius: 5px;
     }
 
+
+    
 
 }
