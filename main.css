@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* esconder a barra de rolagem */
+html {
+    overflow-x: hidden ;
+    background-color: rgb(248, 252, 255); 
+}
+
+body {
+    background-color: #eef7ff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+header, footer {
+    background-color: #007ef3;
+    padding-top: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.shopping-cart-icon img{
+    width: 50px;
+}
+
+
+/* LISTA VEICULOS */
+
+
+
+.lista-veiculos {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 22%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.lista-veiculos img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+/* sobre a loja */
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+#sobre-a-loja img {
+    border-radius: 5px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+
+
+/* BOTAO */
+
+#em-destaque button {
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    background-color: rgb(43, 43, 43);
+    border-radius: 5px;
+    cursor:pointer
+}
+
+.price {
+    display: block;
+    margin: 16px 0;
+}
+
+/* FOOTER */
+
+footer li {
+    list-style: none;
+    height: 32px;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+@media screen and (max-width: 760px) {
+
+    .container {
+        display: flex;
+    }
+
+    /* ABOUT US */
+    
+    #sobre-a-loja > .container-flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    section {
+        padding: 48px 0;
+    }    
+
+    #sobre-a-loja p {
+        text-align: center;
+    }
+    
+    section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    section p {
+        /* text-align: center; */
+        
+    }
+
+    #em-destaque .container {
+        display: block;
+    }
+
+    .lista-veiculos {
+        flex-wrap: wrap;
+        /* gap: 5px; */
+        justify-content: space-between;
+    }
+    
+    .lista-veiculos li {
+        list-style: none;
+        max-width: 45%;
+        margin-bottom: 24px;
+    }
+    
+    .lista-veiculos li h3 {
+        margin: 16px 0;
+    }
+    
+    .lista-veiculos img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        display: flex;
+    }
+
+    /* ABOUT US */
+    
+    #sobre-a-loja > .container-flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sobre-a-loja img {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    
+    section {
+        padding: 48px 0;
+    }    
+
+    #sobre-a-loja p {
+        text-align: center;
+    }
+    
+    section h2 {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    section p {
+        /* text-align: center; */
+        
+    }
+
+    #em-destaque .container {
+        display: block;
+    }
+
+    .lista-veiculos {
+        flex-wrap: wrap;
+        /* gap: 5px; */
+        justify-content: space-between;
+    }
+    
+    .lista-veiculos li {
+        list-style: none;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    .lista-veiculos li h3 {
+        margin: 16px 0;
+    }
+    
+    .lista-veiculos img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+
+}
